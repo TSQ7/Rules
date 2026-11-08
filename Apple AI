@@ -1,0 +1,19 @@
+# 官方清单：PCC 第三方中继（TCP + UDP 443），能看到你的真实国家
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
+DOMAIN,cp4.cloudflare.com
+# 官方清单：ChatGPT 等扩展经过的苹果中继
+DOMAIN,apple-relay.apple.com
+# 官方清单：Siri 与听写
+DOMAIN-SUFFIX,guzzoni.apple.com
+# 官方清单：Siri、Spotlight、查询、Safari 等用到的搜索
+DOMAIN-SUFFIX,smoot.apple.com
+# iOS 27 新增：新 Siri 用到的专用代理主机（来自厂商排障文档）
+DOMAIN,mask.icloud.com
+# 走 TCP 时用的入口；节点不支持 UDP 时会用到
+DOMAIN,mask-h2.icloud.com
+DOMAIN,mask-api.icloud.com
+# 非官方：社区抓包里出现过的 Siri 子域，用不到也没有副作用
+DOMAIN-SUFFIX,siri.apple.com
+# 可选，默认关闭：会连带影响地图、指南针、天气；什么时候打开见第四节第 6 步
+DOMAIN,gspe1-ssl.ls.apple.com
